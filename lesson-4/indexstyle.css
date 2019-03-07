@@ -1,0 +1,33 @@
+body{
+    /* background-color: #a0eea0; */
+    background-image: url(D:/Beetroot/lesson-2/index-ico.ico)
+}
+.h2{
+    color: #0917cf;
+    text-align: center;
+
+}
+header{
+    color: #0917cf;
+    border-style: double;
+    border-color: #0917cf;
+    font-size: 30px;
+}
+.img{
+    border: 5px groove #1ae2d8;
+    float: right;
+    width: 40%;
+    height: 40%;
+    padding: 5px;
+
+}
+div{
+    float: left;
+}
+.TI{
+    clear: both;
+    text-align: center;
+    color: red;
+    width: 100%;
+}
+

@@ -1,0 +1,91 @@
+* {
+    transition: all .1s ease-in;
+    font-family: “Lucida Sans Unicode”, “Lucida Grande”, sans-serif;
+}
+*,
+:before,
+:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+header {
+    font-size: 13px;
+    margin-left: 21%;
+}
+footer{
+    margin-left: 21%;
+}
+body {
+    color: white;
+    background-color: #3399CC;
+    border: 15px solid #2B81AC;
+    margin: 0;
+}
+article {
+    margin-left: 18%;
+    margin-right: 10%;
+    width: 60%;
+    font-size: 0;
+}
+.lowopacitytext {
+    opacity: 0.7;
+}
+li {
+    display: inline-block;
+    border: 3px solid white;
+    padding: 16px;
+    font-size: 20px;
+    text-align: center;
+    line-height: 2.0;
+}
+.c1 {
+    width: 50%;
+    background-color: #3399CC;
+}
+.c2 {
+    width: 25%;
+    background-color: #33CCCC;
+}
+.c3 {
+    width: 25%;
+    background-color: #996699;
+}
+.c4 {
+    width: 25%;
+    background-color: #C24747;
+}
+.c5 {
+    width: 25%;
+    background-color: #E2674A;
+}
+.c6 {
+    width: 25%;
+    background-color: #FFCC66;
+}
+.c7 {
+    width: 25%;
+    background-color: #99CC99;
+}
+.c8 {
+    width: 25%;
+    background-color: #666699;
+}
+.c9 {
+    width: 50%;
+    background-color: #CC6699;
+}
+.c10 {
+    width: 25%;
+    background-color: #339966;
+}
+.c11 {
+    width: 100%;
+    background-color: #666699;
+}
+ul:hover {
+    opacity: 0.7;
+}
+/* .c1:hover {
+    opacity: 1;
+} */

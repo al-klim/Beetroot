@@ -1,0 +1,295 @@
+*,
+:before,
+:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+html, body {
+    min-height: 100%;
+}
+html {
+    height: 100%;
+}
+body {
+    background-color: grey;
+    background-image: url(general1.jpg);
+    border: 5px solid black;
+}
+.general-background {
+    width: 100%;
+    height: 100%;
+}
+.header {
+    position: relative;
+    text-align: center;
+    background-color: black;
+    color: white;
+    text-shadow: red 0px 0px 20px;
+    width: 100%;
+    top: 10px;
+    border: 1px solid #D5A078;
+    box-shadow: 4px 4px 26px 5px #D5A078;
+    font-size: 30px;
+    padding: 10px;
+    letter-spacing: 10px;
+    opacity: 0.6;
+}
+.header:hover{
+    opacity: 1;
+}
+.h1 {
+    margin: 0;
+}
+.side-paper {
+    position: relative;
+    left: 60px;
+    width: 300px;
+}
+p {
+    font-family: 'Gochi Hand', cursive;
+    /* font-size: 40px; */
+}
+.p1 {
+    position: relative;
+    top: -400px;
+    right: 180px;
+    font-size: 30px;
+}
+.p2 {
+    position: relative;
+    top: -200px;
+    right: 330px;
+    font-size: 30px;
+}
+.p3 {
+    position: absolute;
+    right: 50px;
+    top: 450px;
+    transform: rotate(-35deg);
+    font-size: 80px;
+    text-shadow: 0 0 2px white;
+}
+.border-1 {
+    border: 2px solid black;
+    width: 452px;
+    height: 452px;
+    background-color: white;
+    background-image: url(wood.jpg);
+    position: absolute;
+    left: 33%;
+    top: 160px;
+    box-shadow: 10px 10px 10px 4px black;
+}
+.border-2 {
+    border: 1px dotted black;
+    width: 422px;
+    height: 422px;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    left: 15px;
+    top: 15px;
+    right: 15px;
+    background-color: grey;
+}
+.center > div {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    width: 52.5px;
+    height: 52.5px;
+    z-index: 1;
+}
+.center {
+    font-size: 0;
+    
+}
+.c1 {
+    background-color: black;
+    background-image: url(black-wood.jpg)
+}
+.c2 {
+    background-color: white;
+    background-image: url(white-wood.jpg);
+}
+p {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    color: black;
+    font-size: 15px;
+    position: relative;
+    font-weight: bold;
+}
+.letter {
+    bottom: 16px;
+    left: 13px;
+}
+.num1 {
+    right: 12px;
+    top: 18px;
+}
+.num2 {
+    right: 64.5px;
+    top: 70.6px;
+}
+.num3 {
+    right: 117px;
+    top: 123.1px;
+}
+.num4 {
+    right: 169.5px;
+    top: 175.5px;
+}
+.num5 {
+    right: 221.5px;
+    top: 227.5px;
+}
+.num6 {
+    right: 274px;
+    top: 279.5px;
+}
+.num7 {
+    right: 326.5px;
+    top: 332px;
+}
+.num8 {
+    right: 379px;
+    top: 384px;
+}
+/* .black-checkers {
+    border: 2px solid black;
+} */
+div .black-check {
+    position: absolute;
+    margin: auto;
+    height: 8px;
+    width: 8px;
+    background: #F5F5F5;
+    border-radius: 50%;
+    box-shadow: 0 0 0 6px #000, 0 0 0 8px #F5F5F5, 
+                0 0 0 16px #000, 0 0 0 18px #F5F5F5,
+                0 0 0 1px #000, 4px 4px 10px 21px #000;
+}
+div .c1 {
+    left: 75px;
+    top: 22px;
+}
+div .c2 {
+    left: 180px;
+    top: 22px;
+}
+div .c3 {
+    left: 285px;
+    top: 22px;
+}
+div .c4 {
+    left: 390px;
+    top: 22px;
+}
+div .c5 {
+    left: 22px;
+    top: 74.5px;
+}
+div .c6 {
+    left: 127px;
+    top: 74.5px;
+}
+div .c7 {
+    left: 232px;
+    top: 74.5px;
+}
+div .c8 {
+    left: 337px;
+    top: 74.5px;
+}
+div .c9 {
+    left: 22px;
+    top: 179.5px;
+}
+div .c10 {
+    left: 180px;
+    top: 127px;
+}
+div .c11 {
+    left: 285px;
+    top: 127px;
+}
+div .c12 {
+    left: 390px;
+    top: 127px;
+}
+div .white-check {
+    position: absolute;
+    margin: auto;
+    height: 8px;
+    width: 8px;
+    background: #000;
+    border-radius: 50%;
+    box-shadow: 0 0 0 6px #f5f5f5, 0 0 0 8px #000, 
+                0 0 0 16px #f5f5f5, 0 0 0 18px #000,
+                0 0 0 1px #f5f5f5, 4px 4px 10px 21px #000;
+}
+div .cc1 {
+    left: 22px;
+    bottom: 22px;
+}
+div .cc2 {
+    left: 127px;
+    bottom: 22px;
+}
+div .cc3 {
+    left: 232px;
+    bottom: 22px;
+}
+div .cc4 {
+    left: 337px;
+    bottom: 22px;
+}
+div .cc5 {
+    left: 75px;
+    bottom: 74.5px;
+}
+div .cc6 {
+    left: 180px;
+    bottom: 74.5px;
+}
+div .cc7 {
+    left: 285px;
+    bottom: 74.5px;
+}
+div .cc8 {
+    left: 390px;
+    bottom: 74.5px;
+}
+div .cc9 {
+    left: 22px;
+    bottom: 127px;
+}
+div .cc10 {
+    left: 127px;
+    bottom: 127px;
+}
+div .cc11 {
+    left: 232px;
+    bottom: 127px;
+}
+div .cc12 {
+    left: 337px;
+    bottom: 127px;
+}
+div .white-check:hover {
+    opacity: 0.7;
+}
+div .black-check:hover {
+    opacity: 0.7;
+}
+div .white-check:active {
+    border: 6px dotted green;
+    opacity: 1;
+}
+div .black-check:active {
+    border: 6px dotted red;
+    opacity: 1;
+}

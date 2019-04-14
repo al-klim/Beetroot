@@ -30,7 +30,7 @@ body {
 }
 .title-panel {
     height: 188px;
-    width: 878px;
+    width: 73.1%;
     background-color: #181818;
     display: flex;
     flex-direction: column;
@@ -72,7 +72,7 @@ body {
     top: 22px;
 }
 .control-panel {
-    width: 812px;
+    width: 67.6%;
     height: 77px;
     background-color: #efb72b;
     position: absolute;
@@ -100,7 +100,7 @@ body {
 .main-panel {
     margin-top: 150px;
     height: 1100px;
-    width: 1060px;
+    width: 88.3%;
     background-color: #ffffff;
     box-shadow: 0 0 10px black;
     position: relative;

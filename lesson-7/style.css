@@ -1,0 +1,163 @@
+@font-face { 
+    font-family: 'PNregular';  
+    src: url('fonts/Proxima Nova Regular.otf'); 
+}
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+html {
+    min-height: 100%;
+    margin: 0;
+}
+body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #454f53;
+}
+.background {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    position: relative;
+    height: 100%;
+    width: 1200px;
+    background-color: #454f53;
+    margin-bottom: 20px;
+}
+.title-panel {
+    height: 188px;
+    width: 878px;
+    background-color: #181818;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    position: absolute;
+    right: 0;
+    top: 47px;
+    z-index: 1;
+}
+.title-panel__header {
+    font-family: 'Playfair Display', serif;
+    color: white;
+    font-size: 48px;
+    line-height: 60px;
+    text-transform: capitalize;
+    margin: 0;
+    margin-left: 60px;
+    position: relative;
+    top: 10px;
+}
+.title-panel__title {
+    font-family: 'PNregular';
+    color: #777777;
+    text-transform: uppercase;
+    position: absolute;
+    top: 50px;
+    left: 60px;
+    margin: 0;
+}
+.title-panel__horizontal-line {
+    width: 818px;
+    color: #303030;
+    opacity: 0.1;
+    size: 4px;
+    margin: 0;
+    margin-left: 60px;
+    position: relative;
+    top: 22px;
+}
+.control-panel {
+    width: 812px;
+    height: 77px;
+    background-color: #efb72b;
+    position: absolute;
+    right: 0;
+    top: 235px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    z-index: 2;
+}
+.control-panel * {
+    margin-left: 15px;
+    height: 35px;
+    opacity: 0.7;
+}
+.control-panel .control-panel__item-4 {
+    opacity: 1.0;
+    height: 45px;
+    position: relative;
+    bottom: 4px;
+}
+.control-panel__item-1 {
+    margin-left: 40px;
+}
+.main-panel {
+    margin-top: 150px;
+    height: 1100px;
+    width: 1060px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px black;
+    position: relative;
+}
+.main-panel * {
+    margin: 0;
+    margin-left: 125px;
+}
+.main-panel__author {
+    font-family: 'PNregular';
+    text-transform: uppercase;
+    font-size: 20px;
+    color: #b5b5b5;
+    line-height: 20px;
+    margin-top: 200px;
+    letter-spacing: 4px;
+}
+.main-panel__header {
+    font-family: 'PNregular'; /*не знайшов FUTURA PT */
+    font-size: 78px;
+    font-weight: 900;
+    line-height: 78px;
+    color: #2a2a2a;
+    text-transform: uppercase;
+    margin-top: 50px;
+    letter-spacing: 8px;
+}
+.main-panel__subheader {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    color: #8f8f8f;
+    margin-top: 10px;
+    font-size: 30px;
+    line-height: 100%;
+}
+.main-panel__first-p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 27px;
+    margin-top: 50px;
+    margin-right: 130px;
+    line-height: 40px;
+    text-align: justify;
+}
+.main-panel__second-p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 27px;
+    margin-top: 40px;
+    line-height: 40px;
+    margin-right: 130px;
+    text-align: justify;
+}
+.main-panel__vertical-line {
+    position: absolute;
+    line-height: 0;
+    left: 65px;
+    width: 3px;
+    height: 100%;
+    background-color: #e8eced;
+    margin: 0;
+}

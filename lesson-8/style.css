@@ -1,0 +1,110 @@
+@font-face {
+    font-family: 'Segoe UI';
+    src: url('fonts/SegoeUI.eot');
+    src: url('fonts/SegoeUI.woff') format('woff'),
+         url('fonts/SegoeUI.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+*,
+::before,
+::after {
+    box-sizing: border-box;
+    font-family: 'Segoe UI';
+}
+html {
+    min-height: 100%;
+}
+body {
+    height: 100%;
+}
+.header {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #23232e;
+}
+.logo {
+    display: block;
+    height: 140px;
+}
+.header__headline {
+    font-size: 80px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+}
+.header__subheadline {
+    font-size: 18px;
+    line-height: 30px;
+    color: white;
+    text-align: center;
+}
+.scroll {
+    display: block;
+    height: 45px;
+}
+.main {
+    background-image: url(img/bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.article-about-me {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
+}
+.article-about-me__text {
+    width: 44.8vw;
+    font-size: 30px;
+    line-height: 42px;
+    color: #464b4f;
+    text-align: center;
+    margin-top: 125px;
+    margin-bottom: 120px;
+}
+.article-what-i-do {
+    width: 48.44vw;
+}
+.article-what-i-do__headline {
+    font-size: 80px;
+    color: #464b4f; 
+    text-align: center;
+    margin-bottom: 100px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.article-what-i-do__position {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+.article-what-i-do__template-t,
+.article-what-i-do__brand-t,
+.article-what-i-do__dreams-t {
+    width: 33%;
+    font-size: 18px;
+    line-height: 30px;
+    color: #888a8b;
+    margin-bottom: 125px;
+}
+.article-what-i-do__brand-t,
+.article-what-i-do__dreams-t {
+    margin-left: 30px;
+}
+.article-what-i-do__template-h,
+.article-what-i-do__brand-h,
+.article-what-i-do__dreams-h {
+    position: relative;
+    bottom: 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #464b4f;
+}

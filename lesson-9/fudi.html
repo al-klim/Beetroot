@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <meta charset="utf-8">
+            <meta lang="en">
+            <link rel="stylesheet" href="normalize.css">
+            <link rel="stylesheet" href="style.css">
+            <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700i" rel="stylesheet">
+            <link rel="shortcut icon" href="img/shortcut.png" type="image/x-icon">
+            <title>Find your taste!</title>
+        </head>
+        <body>
+            <div class="header">
+                <img class="header__logo logo" src="img/logo-png.png">
+                    <!-- <svg class="top-panel__logo logo">xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="129" height="108" viewBox="0 0 129 108">
+                        <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+                      <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c138 79.159824, 2016/09/14-01:09:01        ">
+                         <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+                            <rdf:Description rdf:about=""/>
+                         </rdf:RDF>
+                      </x:xmpmeta>
+                      <?xpacket end="w"?></metadata>
+                      <image id="spoon" y="-11" width="129" height="119" xlink:href="data:img/png;base64,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"/>
+                    </svg> -->
+                <div class="header__menu menu">
+                    <div class="menu__log-in">log in</div>
+                    <div class="menu__sign-up">sign up</div>
+                    <div class="menu__sidebar"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14" height="10" viewBox="0 0 14 10">
+                                    <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+                                <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c138 79.159824, 2016/09/14-01:09:01        ">
+                                    <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+                                        <rdf:Description rdf:about=""/>
+                                    </rdf:RDF>
+                                </x:xmpmeta>
+                                <?xpacket end="w"?></metadata>
+                                <image id="Layer_2_copy_2" data-name="Layer 2 copy 2" width="14" height="10" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAKCAQAAAAu0KdMAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfjBA8XLwj0SXCwAAAAHElEQVQY02P8/58BJ2BiwAMY8WjEr5OFYSjZCQCHpwYQpleAgAAAAABJRU5ErkJggg=="/>
+                        </svg>
+                    </div>
+                </div> 
+                <div class="header__main main">
+                    <div class="main__supheadline">
+                        Find your Favorite
+                    </div>
+                    <div class="main__headline">
+                        recipes
+                    </div>
+                    <div class="main__get-started-button get-started-button">
+                        get started
+                    </div>
+                    <div class="main__subheadline subheadline">
+                        OR SEND US YOUR OWN RECIPES AND <span class="subheadline__get">GET REWARDED!</span>
+                    </div>
+                </div>
+            </div>
+            <div class="article-our-advantages">
+                <div class="article-our-advantages__box get-inspired">
+                    <svg class="box__img" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="107" height="107" viewBox="0 0 107 107">
+                        <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+                      <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c138 79.159824, 2016/09/14-01:09:01        ">
+                         <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+                            <rdf:Description rdf:about=""/>
+                         </rdf:RDF>
+                      </x:xmpmeta>
+                      <?xpacket end="w"?></metadata>
+                      <image id="Vector_Smart_Object" data-name="Vector Smart Object" width="107" height="107" xlink:href="data:img/png;base64,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"/>
+                    </svg>
+                    <p class="box__headline">get-inspired</p>
+                    <div class="box__sub-line">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="88" height="1" viewBox="0 0 88 1">
+                                <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+                            <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c138 79.159824, 2016/09/14-01:09:01        ">
+                                <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+                                    <rdf:Description rdf:about=""/>
+                                </rdf:RDF>
+                            </x:xmpmeta>
+                            <?xpacket end="w"?></metadata>
+                            <image width="88" height="1" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFgAAAABAQMAAABg2vtIAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAABlBMVEX1c2UAAABSsqxLAAAAAWJLR0QB/wIt3gAAAAlwSFlzAAALEgAACxIB0t1+/AAAAAd0SU1FB+MEDxcmFt+E9poAAAALSURBVAjXY2BAAAAADAAB5DTqZgAAAABJRU5ErkJggg=="/>
+                        </svg>
+                    </div>
+                    <p class="box__text">Lorem ipsum dolor sit amet, consectetur adipisc 
+                            Pellentesque vel enim a elit viverra elementuma.
+                             Aliquam erat volutpat.
+                    </p>
+                </div>
+                <div class="article-our-advantages__box get-rewarded">
+                    <svg class="box__img" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="107" height="107" viewBox="0 0 107 107">
+                            <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+                        <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c138 79.159824, 2016/09/14-01:09:01        ">
+                            <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+                                <rdf:Description rdf:about=""/>
+                            </rdf:RDF>
+                        </x:xmpmeta><?xpacket end="w"?></metadata>
+                        <image id="Vector_Smart_Object" data-name="Vector Smart Object" width="107" height="107" xlink:href="data:img/png;base64,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"/>
+                    </svg>
+                    <p class="box__headline">get-rewarded</p>
+                    <div class="box__sub-line">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="88" height="1" viewBox="0 0 88 1">
+                        <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+                      <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c138 79.159824, 2016/09/14-01:09:01        ">
+                         <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+                            <rdf:Description rdf:about=""/>
+                         </rdf:RDF>
+                      </x:xmpmeta><?xpacket end="w"?></metadata>
+                      <image width="88" height="1" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFgAAAABAQMAAABg2vtIAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAABlBMVEX1c2UAAABSsqxLAAAAAWJLR0QB/wIt3gAAAAlwSFlzAAALEgAACxIB0t1+/AAAAAd0SU1FB+MEDxcmFt+E9poAAAALSURBVAjXY2BAAAAADAAB5DTqZgAAAABJRU5ErkJggg=="/>
+                        </svg>
+                    </div>
+                    <p class="box__text">Lorem ipsum dolor sit amet, consectetur adipisc 
+                            Pellentesque vel enim a elit viverra elementuma.
+                             Aliquam erat volutpat. 
+                    </p>
+                </div>
+                <div class="article-our-advantages__box get-social">
+                    <svg class="box__img" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="107" height="107" viewBox="0 0 107 107">
+                            <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+                        <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c138 79.159824, 2016/09/14-01:09:01        ">
+                            <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+                                <rdf:Description rdf:about=""/>
+                            </rdf:RDF>
+                        </x:xmpmeta><?xpacket end="w"?></metadata>
+                        <image id="Vector_Smart_Object" data-name="Vector Smart Object" width="107" height="107" xlink:href="data:img/png;base64,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"/>
+                    </svg>
+                    <p class="box__headline">get-social</p>
+                    <div class="box__sub-line">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="88" height="1" viewBox="0 0 88 1">
+                        <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+                      <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c138 79.159824, 2016/09/14-01:09:01        ">
+                         <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+                            <rdf:Description rdf:about=""/>
+                         </rdf:RDF>
+                      </x:xmpmeta><?xpacket end="w"?></metadata>
+                      <image width="88" height="1" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFgAAAABAQMAAABg2vtIAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAABlBMVEX1c2UAAABSsqxLAAAAAWJLR0QB/wIt3gAAAAlwSFlzAAALEgAACxIB0t1+/AAAAAd0SU1FB+MEDxcmFt+E9poAAAALSURBVAjXY2BAAAAADAAB5DTqZgAAAABJRU5ErkJggg=="/>
+                        </svg>
+                    </div>
+                    <p class="box__text">Lorem ipsum dolor sit amet, consectetur adipisc 
+                            Pellentesque vel enim a elit viverra elementuma.
+                             Aliquam erat volutpat. 
+                    </p>   
+                </div>
+            </div>
+            <div class="article-fudi">
+                <img class="article-fudi__img" src="img/phone.png">
+                <div class="article-fudi__fudi-text fudi-text">
+                    <p class="fudi-text__headline">INTRODUCING THE FUDI APP</p>
+                    <div class="fudi-text__sub-line">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="88" height="1" viewBox="0 0 88 1">
+                        <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+                      <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c138 79.159824, 2016/09/14-01:09:01        ">
+                         <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+                            <rdf:Description rdf:about=""/>
+                         </rdf:RDF>
+                      </x:xmpmeta><?xpacket end="w"?></metadata>
+                      <image width="88" height="1" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFgAAAABAQMAAABg2vtIAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAABlBMVEX1c2UAAABSsqxLAAAAAWJLR0QB/wIt3gAAAAlwSFlzAAALEgAACxIB0t1+/AAAAAd0SU1FB+MEDxcmFt+E9poAAAALSURBVAjXY2BAAAAADAAB5DTqZgAAAABJRU5ErkJggg=="/>
+                        </svg>
+                    </div>
+                    <p class="fudi-text__p1">Morbi eget posuere dolor. Pellentesque cursus aliquet aliquet. Aeneanet 
+                            felis sit amet diam mollis ullamcorper. Nullam consequat sem a ante vest
+                            ibulum tristique. Suspendisse tristique lacus ac mattis porta. 
+                    </p>
+                    <p class="fudi-text__p2">Vivamus ligula quam, vehicula non lacinia sed, faucibus sit amet libero. In 
+                            libero dui, eleifend eu nisi id, egestas fringilla odio. In varius quam a mas
+                            sa hendrerit ullamcorper a eu justo. Suspendisse porta mattis convallis. 
+                            Aenean tempus ligula ac odio rhoncus, quis aliquam dolor accumsan. 
+                    </p>
+                    <p class="fudi-text__p3">Suspendisse aliquet felis consectetur libero congue, sed pulvinar diam 
+                            malesuada. Duis vehicula a nibh id hendrerit. Donec sit amet ultrices 
+                            ante, a mattis massa. 
+                    </p>
+                    <img class="fudi-text__app-store app-store" src="img/appstore.png">
+                    <img class="fudi-text__gplay gplay" src="img/gplay.png">
+                </div>
+            </div>
+            <div class="article-feedbacks">
+                <img class="article-feedbacks__portret" src="img/portret.png">
+                <p class="article-feedbacks__feedback-text">“I am so happy because I found this recipe, and it just made my life easier.
+                    Thanks  so much for sharing!”
+                </p>
+                <p class="article-feedbacks__feedback-sign">
+                    - Michael Dawson, San Francisco, CA -
+                </p>
+                <ul class="article-feedbacks__slider slider" type="none">
+                    <li class="slider__item"></li>
+                    <li class="slider__item"></li>
+                    <li class="slider__item"></li>
+                </ul>
+            </div>
+            <div class="article-browse-by">
+                <div class="article-browse-by__headline">
+                    BROWSE BY CUISINES
+                </div>
+                <div class="article-browse-by__sub-line">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="88" height="1" viewBox="0 0 88 1">
+                                <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+                            <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c138 79.159824, 2016/09/14-01:09:01        ">
+                                <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+                                    <rdf:Description rdf:about=""/>
+                                </rdf:RDF>
+                            </x:xmpmeta><?xpacket end="w"?></metadata>
+                            <image width="88" height="1" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFgAAAABAQMAAABg2vtIAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAABlBMVEX1c2UAAABSsqxLAAAAAWJLR0QB/wIt3gAAAAlwSFlzAAALEgAACxIB0t1+/AAAAAd0SU1FB+MEDxcmFt+E9poAAAALSURBVAjXY2BAAAAADAAB5DTqZgAAAABJRU5ErkJggg=="/>
+                    </svg>
+                </div>
+                <div class="article-browse-by__inter-dishes inter-dishes">
+                    <div class="inter-dishes__italian dish-block">
+                        <p class="dish-block__headline"><span class="dish-block_number">312 Resipes</span><br>italian</p>
+                    </div>
+                    <div class="inter-dishes__indian dish-block">
+                        <p class="dish-block__headline"><span class="dish-block_number">43 Resipes</span><br>indian</p>
+                    </div>
+                    <div class="inter-dishes__french dish-block">
+                        <p class="dish-block__headline"><span class="dish-block_number">123 Resipes</span><br>french</p>
+                    </div>
+                    <div class="inter-dishes__steakhouse dish-block">
+                        <p class="dish-block__headline"><span class="dish-block_number">54 Resipes</span><br>steakhouse</p>
+                    </div>
+                    <div class="inter-dishes__seafood dish-block">
+                        <p class="dish-block__headline"><span class="dish-block_number">65 Resipes</span><br>seafood</p>
+                    </div>
+                    <div class="inter-dishes__sushi dish-block">
+                        <p class="dish-block__headline"><span class="dish-block_number">345 Resipes</span><br>sushi</p>
+                    </div>
+                    <div class="inter-dishes__mexican dish-block">
+                        <p class="dish-block__headline"><span class="dish-block_number">657 Resipes</span><br>mexican</p>
+                    </div>
+                    <div class="inter-dishes__chinese dish-block">
+                        <p class="dish-block__headline"><span class="dish-block_number">23 Resipes</span><br>chinese</p>
+                    </div>
+                    <div class="inter-dishes__pizza dish-block">
+                        <p class="dish-block__headline"><span class="dish-block_number">34 Resipes</span><br>pizza</p>
+                    </div>
+                    <div class="inter-dishes__american dish-block">
+                        <p class="dish-block__headline"><span class="dish-block_number">646 Resipes</span><br>american</p>
+                    </div>
+                </div>
+            </div>
+            <div class="article-stat">
+                <p class="article-stat__num num">
+                    23,567 <br>
+                    <span class="num__sign">Recipes Available</span>
+                </p>
+                <p class="article-stat__num num">
+                    431,729 <br>
+                    <span class="num__sign">Active Users</span>
+                </p>
+                <p class="article-stat__num num">
+                    892,173 <br>
+                    <span class="num__sign">Positive Reviews </span>
+                </p>
+                <p class="article-stat__num num">
+                    56,581 <br>
+                    <span class="num__sign">Photos & Videos</span>
+                </p>
+                <p class="article-stat__num num">
+                    3,182 <br>
+                    <span class="num__sign">Spices and Herbs </span>
+                </p>
+            </div>
+            <div class="footer">
+                <p class="footer__rights">
+                    &#169 2014 Fudi. All Rights Reserved.
+                </p>
+            <p class="footer__signature signature">
+                DESIGN BY:
+                <span class="signature__site">WWW.BEKADES.COM</span>
+            </p>
+        </body>
+    </html>
